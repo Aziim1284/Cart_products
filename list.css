@@ -1,0 +1,148 @@
+body {
+  background-color: wheat;
+  width: min-content;
+  margin:0px;
+  padding: 0px;
+  font-family: courier, monospace;
+  /* overflow: hidden; */
+}
+
+form  {
+  color: #3498db;
+  font-size: 22px;
+ 
+}
+div{
+  display: flex;
+  height:max-content;
+  width: 1500px;
+  flex-direction: row;
+  column-gap: 1px;
+  column-count: 5;
+  box-shadow: 5px 5px 7px rgba(167, 157, 49 , 0.4) , -5px -5px 7px rgba(179, 173, 11 , 0.4);
+  background-color: rgb(246, 211, 147);
+}
+input[type="text"]{
+  background-color : #c09c9c;
+  border: none;
+  border-radius: 20px;
+   height: 35px;
+   width: 200px;
+   padding: 15px;
+   outline: none;
+   position: relative;
+   left: -157px;
+   top: -50px;
+    color: rgb(73, 4, 248);
+ }
+
+#addNeed ,  #addHave {
+  background-color : #f8f8f8;
+  color: #f3f6f8;
+  width: 100px;
+  height: 49px;
+  cursor: pointer;
+  border-end-end-radius: 15px;
+  border-top-left-radius: 15px;
+  border: none;
+  position: relative;
+  top: -22px;
+  left: -157px;
+  background:url(../GroceryList-master/linedpaper/shsak.webp);
+  box-shadow: 5px 5px 7px rgb(249, 249, 249) , -5px -5px 7px rgb(159, 154, 154);
+}
+
+
+#addHave:hover {
+  background: url(../GroceryList-master/linedpaper/linedpaper.png);
+  color: #3498db;
+  box-shadow: 3px 3px 5px black, -3px -3px 5px black;
+  
+}
+#addNeed:hover {
+  background: url(../GroceryList-master/linedpaper/linedpaper.png);
+  color: #3498db;
+  box-shadow: 3px 3px 5px black, -3px -3px 5px black;
+}
+
+
+h1 {
+  color: #fbc207;
+  font-size: 50px;
+  text-shadow:5px 5px 8px #f3f6f8;
+  position: relative;
+  left: 112px;
+  top: -30px;
+  height: 100px;
+}
+label{
+  position: relative;
+  left: -103px;
+  top: -70px;
+}
+
+h2 {
+  color: #2a05f9;
+  font-size: 52px;
+  letter-spacing: -2px;
+  height: 20px;
+  /* text-align: center; */
+  position: relative;
+  left: 48px;
+  top: -32px;
+}
+.list {
+  color: #555;
+  font-size: 22px;
+  padding: 0;
+  width: 450px;
+  box-shadow: 6px 6px 10px rgb(250, 223, 173), -6px -6px 13px rgb(248, 222, 174);
+ margin-left: 20px;
+ position: relative;
+ top: 40px;
+ left: -263px;
+}
+#adding{
+  position: relative;
+  top: 200px;
+  padding: 30px;
+   
+}
+.list li {
+  list-style: none;
+  background-color : rgb(252, 243, 227);
+   width: 360px;
+  text-indent: 15px;
+  height: 2px;
+  padding: 4px;
+  text-transform: capitalize;
+  color: #3498db;
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px rgb(252, 221, 162), -6px -6px 13px rgb(249, 213, 148),
+  inset 6px 6px 10px rgb(252, 221, 162), -6px -6px 13px rgb(249, 213, 148);
+
+  
+  margin: 10px;
+  padding: 30px;
+}
+.list li:hover{
+  box-shadow: 3px 3px 5px black, -3px -3px 5px black;
+  /* transform: scale(0.5) translate(-100%, -100%); */
+}
+li a {
+  float: right;
+  text-decoration: none;
+  color: red;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), /* Webkit-based browsers */
+       (min--moz-device-pixel-ratio: 2),    /* Older Firefox browsers (prior to Firefox 16) */
+       (min-resolution: 2dppx),             /* The standard way */
+       (min-resolution: 192dpi)             /* dppx fallback */
+{
+	body {
+		background-image: url('linedpaper/linedpaper_@2x.png');
+	}
+}
